@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-bar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .nav-bar li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-bar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-bar li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .content {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .tutorial-section {
+            margin-bottom: 30px;
+        }
+
+        .tutorial-section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        .sidebar h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            color: #4CAF50;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                order: 2;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="tutorial-section">
+                <h1>Welcome to the Tutorial Page</h1>
+                <p>This is a simple tutorial page layout inspired by W3Schools. Learn web development with ease!</p>
+            </div>
+
+            <div class="tutorial-section" id="html">
+                <h2>HTML Tutorial</h2>
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. Learn the basics and advanced topics to build your own websites.</p>
+                <a href="#html" class="button">Start Learning HTML</a>
+            </div>
+
+            <div class="tutorial-section" id="css">
+                <h2>CSS Tutorial</h2>
+                <p>CSS (Cascading Style Sheets) is used to style and layout web pages. Master CSS to create visually appealing and responsive designs.</p>
+                <a href="#css" class="button">Start Learning CSS</a>
+            </div>
+
+            <div class="tutorial-section" id="javascript">
+                <h2>JavaScript Tutorial</h2>
+                <p>JavaScript is a programming language that enables interactive web pages. Learn JavaScript to add dynamic behavior to your websites.</p>
+                <a href="#javascript" class="button">Start Learning JavaScript</a>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Additional Resources</h3>
+            <ul>
+                <li><a href="#resource1">HTML Cheat Sheet</a></li>
+                <li><a href="#resource2">CSS Flexbox Guide</a></li>
+                <li><a href="#resource3">JavaScript Documentation</a></li>
+            </ul>
+
+            <h3>Popular Tutorials</h3>
+            <ul>
+                <li><a href="#tutorial1">Introduction to Web Development</a></li>
+                <li><a href="#tutorial2">Responsive Design Techniques</a></li>
+                <li><a href="#tutorial3">JavaScript Frameworks</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tutorial Page. All rights reserved.</p>
+        <p><a href="#privacy-policy" style="color: white; text-decoration: none;">Privacy Policy</a> | <a href="#terms-of-service" style="color: white; text-decoration: none;">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
